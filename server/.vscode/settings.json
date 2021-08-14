@@ -1,0 +1,8 @@
+{
+    "editor.accessibilitySupport": "on",
+    "diffEditor.wordWrap": "on",
+    "editor.wordWrap": "on",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true
+}

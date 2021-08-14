@@ -1,0 +1,50 @@
+### REGISTER
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "vhungitm",
+    "password": "123456"
+}
+
+### LOGIN USER
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "vhungitm",
+    "password": "123456"
+}
+
+### GET POSTS
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTA5MWQzOTdhODU4ODQ1ODg1ZmU3NmEiLCJpYXQiOjE2Mjc5OTI1NjN9.UJryA4rwP4Gp5g9zZlioIDT6lzQ1brppg4HlQ0drdP4
+
+### CREATE POST
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTA5MWQzOTdhODU4ODQ1ODg1ZmU3NmEiLCJpYXQiOjE2Mjc5OTI1NjN9.UJryA4rwP4Gp5g9zZlioIDT6lzQ1brppg4HlQ0drdP4
+
+{
+    "title": "Java Script",
+    "description": "Java Script",
+    "url": "Javascript.com",
+    "status": "LEARNED"
+}
+
+### UPDATE POST
+PUT http://localhost:5000/api/posts/6109333ed15b5b497c37af7c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTA5MWQzOTdhODU4ODQ1ODg1ZmU3NmEiLCJpYXQiOjE2Mjc5OTI1NjN9.UJryA4rwP4Gp5g9zZlioIDT6lzQ1brppg4HlQ0drdP4
+
+{
+    "title": "Reactjs",
+    "description": "",
+    "url": "Reactjs.com",
+    "status": "TO LEARN"
+}
+
+### DELETE POST
+DELETE http://localhost:5000/api/posts/6109333ed15b5b497c37af7c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTA5MWQzOTdhODU4ODQ1ODg1ZmU3NmEiLCJpYXQiOjE2Mjc5OTI1NjN9.UJryA4rwP4Gp5g9zZlioIDT6lzQ1brppg4HlQ0drdP4
